@@ -42,3 +42,8 @@ The goal of this project is to build a strong understanding of core cloud comput
 
 project-1-cloud-foundations/
 |——README.md
+
+
+## Outcome
+
+By completing this project, I developed a solid understanding of foundational cloud computing concepts and how cloud resources are planned, structured and managed using automation-first principles. This project prepares me for hands-on infrastructure provisioning and more advanced DevOps workflows.
