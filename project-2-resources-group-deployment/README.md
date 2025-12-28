@@ -26,5 +26,5 @@ scripts/create-resource-group.sh
 - `scripts/create-resource-group.sh` – Bash script for Azure resource group creation (simulation)
 - `screenshots/` – CLI execution screenshot evidence
 
-- ## Outcome
+## Outcome
 This project demonstrates how basic cloud infrastructure automation is planned, documented, and validated using scripting best practices, even when live cloud access is unavailable.
