@@ -36,3 +36,9 @@ The goal of this project is to build a strong understanding of core cloud comput
 - Fault tolerance
 - Backup and recovery planning
 - Regional and zonal awareness
+
+
+## Project Structure
+
+project-1-cloud-foundations/
+|——README.md
