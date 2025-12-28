@@ -2,21 +2,21 @@
 
 ## Overview
 This project demonstrates foundational cloud resource management using Microsoft Azure concepts and CLI-based scripting.  
-The focus is on understanding how cloud resources—specifically resource groups—are structured, named, created, and cleaned up using automation-friendly Bash scripts.
+The focus is on understanding how cloud resources specifically resource groups are structured, named, created and cleaned up using automation-friendly Bash scripts.
 
 Due to account access limitations, this project is implemented as a **deployment simulation**, reflecting real-world planning, scripting, and operational readiness rather than live resource creation.
 
----
+
 
 ## Goal
-The goal of this project is to build a strong understanding of core cloud computing concepts, service models, and deployment models before progressing to more advanced infrastructure automation and DevOps workflows.
+The goal of this project is to build a strong understanding of core cloud computing concepts, service models and deployment models before progressing to more advanced infrastructure automation and DevOps workflows.
 
----
+
 
 ## Key Concepts Covered
 
 ### Cloud Computing Fundamentals
-- On-demand resource provisioning
+- On demand resource provisioning
 - Scalability and elasticity
 - Pay-as-you-go cost models
 - Infrastructure abstraction
@@ -37,10 +37,9 @@ The goal of this project is to build a strong understanding of core cloud comput
 - Backup and recovery planning
 - Regional and zonal awareness
 
----
 
 ## Project Structure
 
-```text
+
 project-1-cloud-foundations/
 ├── README.md
