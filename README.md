@@ -1,0 +1,33 @@
+# Cloud & DevOps Foundations Portfolio
+
+This repository contains a series of foundational Cloud and DevOps projects designed to build practical understanding of cloud concepts, automation, and infrastructure operations.
+
+Each project is documented with clear explanations, scripts, and diagrams to demonstrate learning progression and real-world readiness.
+
+---
+
+## Projects
+
+### Project 1: Cloud Foundations
+**Focus:**
+- Cloud computing fundamentals
+- IaaS, PaaS, SaaS
+- Public, Private, and Hybrid cloud models
+- High availability and disaster recovery concepts
+
+📁 Folder: `project-1-cloud-foundations/`
+
+
+### Project 2: Resource Group and Deployment Simulations
+**Focus:**
+- Azure Resource Groups
+- CLI-based automation concepts
+- Bash scripting for cloud operations
+- Deployment simulations due to account limitations
+
+📁 Folder: `project-2-resource-group-deployment/`
+
+
+## Notes
+Some projects use deployment simulations and screenshots where live cloud access was unavailable.  
+All scripts reflect real-world cloud CLI syntax and professional documentation practices.
