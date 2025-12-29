@@ -43,7 +43,8 @@ The goal of this project is to build a strong understanding of core cloud comput
 project-1-cloud-foundations/
 |——README.md
 
-##Diagrams
+
+## Diagrams
 
 This project includes the following high level diagrams to illustrate core cloud concepts:
 	•	Cloud Disaster Recovery Architecture  Demonstrates a cloud based disaster recovery setup with primary and backup regions, automated backups, and failover considerations.
