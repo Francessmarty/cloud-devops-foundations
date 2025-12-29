@@ -43,7 +43,13 @@ The goal of this project is to build a strong understanding of core cloud comput
 project-1-cloud-foundations/
 |——README.md
 
+##Diagrams
 
+This project includes the following high level diagrams to illustrate core cloud concepts:
+	•	Cloud Disaster Recovery Architecture  Demonstrates a cloud based disaster recovery setup with primary and backup regions, automated backups, and failover considerations.
+	•	Cloud Service Models (IaaS, PaaS, SaaS)  Visual comparison of responsibility and abstraction layers across infrastructure, platform, and software service models.
+	•	Cloud Deployment Models (Public, Private, Hybrid)  Illustrates differences in infrastructure ownership, access control, scalability, and security across deployment models.
+  
 ## Outcome
 
 By completing this project, I developed a solid understanding of foundational cloud computing concepts and how cloud resources are planned, structured and managed using automation-first principles. This project prepares me for hands-on infrastructure provisioning and more advanced DevOps workflows.
