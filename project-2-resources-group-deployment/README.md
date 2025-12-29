@@ -59,7 +59,9 @@ Execution was validated through:
 - Azure CLI output showing `Succeeded` provisioning state
 - Azure Portal confirmation of the resource group
 
-Screenshots of execution and verification are included in this repository.
+### Azure Execution Screenshots
+Real Azure CLI and Portal screenshots validating successful resource
+group creation and verification in a live Azure subscription.
 
 ## Resource Lifecycle Note
 
