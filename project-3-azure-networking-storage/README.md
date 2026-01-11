@@ -25,7 +25,7 @@ virtual network and how different Azure storage services are used in practice.
 The diagram below illustrates the Azure Virtual Network design, firewall placement,
 routing flow, and storage integration used in this project.
 
-![Azure Networking and Storage Architecture](diagrams/azure-networking-storage-architecture.png)
+
 
 ---
 
