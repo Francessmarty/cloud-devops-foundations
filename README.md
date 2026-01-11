@@ -30,6 +30,7 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 ### Project 3: Azure Networking & Storage
 
 **Focus:**
+
 	•	Azure Virtual Networks (VNets)
 
 	•	Subnets and network boundaries
@@ -40,6 +41,7 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 
 	•	Azure Storage services (Blob, File, Queue, Table)
 
+
 📁 Folder: 'project-3-azure-networking-storage/'
 
 ⸻
@@ -47,11 +49,13 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 ### Project 4: Cloud Security & GitHub Basics
 
 **Focus:**
+
 	•	Cloud security fundamentals
 	•	Identity and Access Management (IAM)
 	•	Network Security Groups (NSGs)
 	•	Least privilege access
 	•	GitHub documentation and version control
+
 
 📁 Folder: 'project-4-cloud-security-github/'
 
