@@ -1,4 +1,4 @@
-# Project 3: Azure Virtual Networks & Cloud Storage (Week 3)
+# Project 3: Azure Virtual Networks & Cloud Storage
 
 ## Overview
 This project focuses on core Azure networking and storage concepts using a mix of
