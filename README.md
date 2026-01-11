@@ -27,7 +27,7 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 
 📁 Folder: `project-2-resource-group-deployment/`
 
-Project 3: Azure Networking & Storage
+### Project 3: Azure Networking & Storage
 
 Focus:
 	•	Azure Virtual Networks (VNets)
@@ -40,7 +40,7 @@ Focus:
 
 ⸻
 
-Project 4: Cloud Security & GitHub Basics
+### Project 4: Cloud Security & GitHub Basics
 
 Focus:
 	•	Cloud security fundamentals
