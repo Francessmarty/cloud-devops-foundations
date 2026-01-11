@@ -61,9 +61,13 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 **Focus:**
 
 	•	Cloud security fundamentals
+
 	•	Identity and Access Management (IAM)
+
 	•	Network Security Groups (NSGs)
+
 	•	Least privilege access
+
 	•	GitHub documentation and version control
 
 
