@@ -62,7 +62,22 @@ Screenshots are stored in the `/screenshots` folder and include:
 - Route table configuration
 - Storage services creation
 - Resource group deletion confirmation
+## Screenshots
 
+### 1. Virtual Network and Subnets
+![VNet and Subnets](screenshots/01-vnet-and-subnets-created.png)
+
+### 2. Azure Firewall with Public IP
+![Azure Firewall Public IP](screenshots/02-azure-firewall-with-public-ip.png)
+
+### 3. Route Table (UDR) Redirecting Traffic to Firewall
+![Route Table UDR](screenshots/03-route-table-udr-to-firewall.png)
+
+### 4. Storage Account Overview
+![Storage Account](screenshots/04-storage-account-overview.png)
+
+### 5. Resource Cleanup Confirmation
+![Resource Group Deleted](screenshots/05-resource-group-deleted.png)
 ---
 
 ## Cleanup
