@@ -31,9 +31,13 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 
 **Focus:**
 	•	Azure Virtual Networks (VNets)
+
 	•	Subnets and network boundaries
+
 	•	Public vs Private IPs
+
 	•	Network Security Groups (NSGs)
+
 	•	Azure Storage services (Blob, File, Queue, Table)
 
 📁 Folder: 'project-3-azure-networking-storage/'
