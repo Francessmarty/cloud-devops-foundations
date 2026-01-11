@@ -1,4 +1,4 @@
-# Project 4: Cloud Security & GitHub Basics (Week 4)
+# Project 4: Cloud Security & GitHub Basics
 
 ## Overview
 This project covers foundational cloud security concepts and basic GitHub workflows.
