@@ -34,10 +34,28 @@ IAM controls who can access resources and what actions they can perform. In Azur
 Security compliance helps ensure systems meet standards and regulatory requirements (e.g., ISO 27001, SOC 2, GDPR). In practice, teams use policies, audits, and access controls to reduce risk.
 
 ## Evidence
-Screenshots will be added in `/screenshots` to show:
-- Resource group creation
-- Resource group resources (VNet + NSG)
-- NSG inbound rules configuration
+
+### 1. Resource Group Created
+![Resource Group Created](screenshots/01-resource-group-created.png)
+
+This screenshot shows the successful creation of a dedicated Azure Resource Group used for security-related resources.
+
+---
+
+### 2. Resource Group Resources (VNet + NSG)
+![Resource Group Resources](screenshots/02-rg-security-resources.png)
+
+This screenshot shows the resources inside the security resource group, including the Virtual Network (VNet) and Network Security Group (NSG).
+
+---
+
+### 3. NSG Inbound Security Rules
+![NSG Inbound Rules](screenshots/03-nsg-security-inbound-rules.png)
+
+This screenshot shows the configured inbound security rules:
+- Allow SSH (Port 22)
+- Allow HTTP (Port 80)
+- Default deny rules for all other traffic
 
 ## Key Learnings
 - How NSGs control inbound/outbound traffic using rules and priorities
