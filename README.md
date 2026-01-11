@@ -9,21 +9,31 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 ## Projects
 
 ### Project 1: Cloud Foundations
+
 **Focus:**
-- Cloud computing fundamentals
-- IaaS, PaaS, SaaS
-- Public, Private, and Hybrid cloud models
-- High availability and disaster recovery concepts
+
+• Cloud computing fundamentals
+
+• IaaS, PaaS, SaaS
+
+• Public, Private, and Hybrid cloud models
+
+• High availability and disaster recovery concepts
 
 📁 Folder: `project-1-cloud-foundations/`
 
 
 ### Project 2: Resource Group and Deployment Simulations
+
 **Focus:**
-- Azure Resource Groups
-- CLI-based automation concepts
-- Bash scripting for cloud operations
-- Deployment simulations due to account limitations
+
+• Azure Resource Groups
+
+• CLI-based automation concepts
+
+• Bash scripting for cloud operations
+
+• Deployment simulations due to account limitations
 
 📁 Folder: `project-2-resource-group-deployment/`
 
@@ -42,7 +52,7 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 	•	Azure Storage services (Blob, File, Queue, Table)
 
 
-📁 Folder: 'project-3-azure-networking-storage/'
+📁 Folder: project-3-azure-networking-storage/
 
 ⸻
 
@@ -57,7 +67,7 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 	•	GitHub documentation and version control
 
 
-📁 Folder: 'project-4-cloud-security-github/'
+📁 Folder:  project-4-cloud-security-github/
 
 
 ## Notes
