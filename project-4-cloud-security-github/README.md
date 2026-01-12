@@ -1,64 +1,85 @@
-# Project 4: Cloud Security & GitHub Basics
+# Project 4: Cloud Foundations & GitHub Workflow
 
 ## Overview
-This project covers foundational cloud security concepts and basic GitHub workflows.
-The Azure work focuses on Network Security Groups (NSGs) and safe resource management.
-The GitHub work focuses on documenting projects clearly and practicing version control.
+This project focuses on reinforcing core cloud fundamentals in Microsoft Azure and practicing professional GitHub workflows.
+
+The Azure work demonstrates basic resource organization and networking components, while the GitHub work focuses on documentation, commits, and pull request workflows commonly used in real-world projects.
+
+---
 
 ## Objectives
-- Understand core cloud security concepts: IAM, encryption, and compliance (high level)
-- Create and manage an Azure Resource Group for security resources
-- Configure a Network Security Group (NSG) with inbound rules
-- Document work in GitHub using a clean folder structure and clear commits
+- Create and manage Azure resources using the Azure Portal
+- Understand basic virtual networking components (VNet, Subnet, NSG)
+- Practice clear documentation using Markdown
+- Demonstrate GitHub workflows including commits and pull requests
+
+---
 
 ## What I Built (Azure)
-- Created a dedicated Resource Group for Week 4 security work
-- Deployed a VNet and subnet (basic network boundary)
-- Created an NSG and configured inbound rules:
+- Created a dedicated Azure Resource Group
+- Deployed a Virtual Network (VNet) and subnet
+- Created and configured a Network Security Group (NSG)
+- Added basic inbound rules:
   - Allow SSH (Port 22)
   - Allow HTTP (Port 80)
-- Associated the NSG to the subnet
-- Deleted resources after validation to avoid unnecessary costs
+- Associated the NSG with the subnet
+- Cleaned up resources after validation to avoid unnecessary costs
 
-## Security Notes (Concepts)
-### Identity and Access Management (IAM)
-IAM controls who can access resources and what actions they can perform. In Azure, IAM is implemented using RBAC (roles) at scopes like subscription, resource group, and resource level. For this lab, default permissions were used and actions were kept minimal to follow least privilege.
+---
 
-### Encryption and Best Practices
-- Use HTTPS/TLS for secure communication
-- Data at rest is encrypted by default in many Azure services
-- Avoid exposing management ports publicly unless required (e.g., SSH)
-- Prefer least privilege and explicit allow rules
+## GitHub Workflow Demonstrated
+- Created a feature branch for documentation updates
+- Made a small README change
+- Committed changes with a clear commit message
+- Opened a pull request for review
+- Prepared the pull request for merge into the main branch
 
-### Compliance and Policies
-Security compliance helps ensure systems meet standards and regulatory requirements (e.g., ISO 27001, SOC 2, GDPR). In practice, teams use policies, audits, and access controls to reduce risk.
+This reflects a standard GitHub documentation workflow used in collaborative environments.
+
+---
 
 ## Evidence
 
 ### 1. Resource Group Created
 ![Resource Group Created](screenshots/01-resource-group-created.png)
 
-This screenshot shows the successful creation of a dedicated Azure Resource Group used for security-related resources.
+This screenshot shows the successful creation of a dedicated Azure Resource Group.
 
 ---
 
 ### 2. Resource Group Resources (VNet + NSG)
 ![Resource Group Resources](screenshots/02-rg-security-resources.png)
 
-This screenshot shows the resources inside the security resource group, including the Virtual Network (VNet) and Network Security Group (NSG).
+This screenshot shows the resources inside the Resource Group, including the Virtual Network and Network Security Group.
 
 ---
 
-### 3. NSG Inbound Security Rules
+### 3. NSG Inbound Rules
 ![NSG Inbound Rules](screenshots/03-nsg-security-inbound-rules.png)
 
-This screenshot shows the configured inbound security rules:
-- Allow SSH (Port 22)
-- Allow HTTP (Port 80)
-- Default deny rules for all other traffic
+This screenshot shows the configured inbound rules allowing SSH and HTTP traffic.
+
+---
+
+### 4. GitHub Commit (Documentation Update)
+![GitHub Commit](screenshots/04-github-commit-readme-update.png)
+
+This screenshot shows a documentation commit made to the README file.
+
+---
+
+### 5. GitHub Pull Request Created
+![GitHub Pull Request](screenshots/06-github-pull-request.png)
+
+This screenshot shows the pull request created to merge documentation changes into the main branch.
+
+---
 
 ## Key Learnings
-- How NSGs control inbound/outbound traffic using rules and priorities
+- How Azure resources are organised using Resource Groups
+- Basic virtual networking concepts in Azure
+- The importance of documenting work clearly
+- How GitHub commits and pull requests support structured collaboration
 - Why “allow only what you need” is a core security principle
 - Why documentation and cleanup matter in cloud environments
 - How GitHub can be used to present work clearly for recruiters
