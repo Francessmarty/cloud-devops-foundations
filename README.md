@@ -1,8 +1,8 @@
 # Cloud & DevOps Foundations Portfolio
 
-This repository contains a series of foundational Cloud and DevOps projects designed to build practical understanding of cloud concepts, automation, and infrastructure operations.
+This repository contains a series of foundational Cloud and DevOps projects designed to build practical understanding of cloud concepts, automation and infrastructure operations.
 
-Each project is documented with clear explanations, scripts, and diagrams to demonstrate learning progression and real-world readiness.
+Each project is documented with clear explanations, scripts and diagrams to demonstrate learning progression and real world readiness.
 
 ---
 ## Projects
@@ -11,7 +11,7 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 **Focus:**
 - Cloud computing fundamentals
 - IaaS, PaaS, SaaS
-- Public, Private, and Hybrid cloud models
+- Public, Private and Hybrid cloud models
 - High availability and disaster recovery concepts
 
 📁 Folder: `project-1-cloud-foundations/`
@@ -55,5 +55,6 @@ Each project is documented with clear explanations, scripts, and diagrams to dem
 
 Some projects use deployment simulations and screenshots where live cloud access was unavailable.
 
-All scripts reflect real-world cloud CLI syntax, security best practices, and professional documentation standards.
+All scripts reflect real-world cloud CLI syntax, security best practices and professional documentation standards.
 
+Last documentation update: Jan 2026
