@@ -61,17 +61,42 @@ This screenshot shows the configured inbound rules allowing SSH and HTTP traffic
 
 ---
 
-### 4. GitHub Commit (Documentation Update)
-![GitHub Commit](screenshots/04-github-commit-readme-update.png)
+### 4. GitHub Branch Created
+
+![GitHub Branch Created](screenshots/04-github-branch-created.png)
+
+This screenshot shows a feature branch created for documentation updates.
+---
+
+### 5. GitHub Commit (Documentation Update)
+
+![GitHub Commit](screenshots/05-github-commit-made.png)
 
 This screenshot shows a documentation commit made to the README file.
 
 ---
 
-### 5. GitHub Pull Request Created
-![GitHub Pull Request](screenshots/06-github-pull-request.png)
+### 6. GitHub Pull Request Created
+
+![GitHub Pull Request Created](screenshots/06-github-pull-request-created.png)
 
 This screenshot shows the pull request created to merge documentation changes into the main branch.
+
+---
+
+### 7. Pull Request Open for Review
+
+![Pull Request Open for Review](screenshots/07-github-pull-request-open-review.png)
+
+This screenshot shows the pull request open and ready for review with no conflicts detected.
+
+---
+
+### 8. Pull Request Merged
+
+![Pull Request Merged](screenshots/08-github-merge-complete.png)
+
+This screenshot shows the successful merge of the pull request into the main branch.
 
 ---
 
