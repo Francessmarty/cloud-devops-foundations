@@ -1,0 +1,19 @@
+Linux Basics Script
+Project: Linux & Git Fundamentals
+User: Admin
+Date: Thu, Jan 22, 2026  2:20:11 AM
+
+Current directory:
+/c/Users/Admin/Documents/GitHub/cloud-devops-foundations/project-5-linux-git-fundamentals
+
+List files (detailed):
+total 16
+drwxr-xr-x 1 Admin 197121    0 Jan 22 01:34 .
+drwxr-xr-x 1 Admin 197121    0 Jan 22 01:29 ..
+drwxr-xr-x 1 Admin 197121    0 Jan 22 02:20 logs
+drwxr-xr-x 1 Admin 197121    0 Jan 22 01:31 notes
+-rw-r--r-- 1 Admin 197121 1034 Jan 22 01:54 README.md
+drwxr-xr-x 1 Admin 197121    0 Jan 22 02:19 screenshots
+drwxr-xr-x 1 Admin 197121    0 Jan 22 01:56 scripts
+
+Done
