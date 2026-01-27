@@ -1,4 +1,4 @@
-# Project 5 — Linux + Git + GitHub Fundamentals
+# Project 5 Linux + Git + GitHub Fundamentals
 
 This project documents my hands-on learning of Linux command line basics and Git/GitHub version control workflows.
 
