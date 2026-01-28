@@ -30,12 +30,12 @@ project-6-azure-linux-vm-deployment/
 	1.	Authenticated to Azure using Azure CLI
 	2.	Selected the correct Azure subscription
 	3.	Executed deployment script:  ./deployment/deploy_vm.sh
-4.  Verified creation of:
-	•	Resource group
-	•	Virtual network & subnet
-	•	Network security group (SSH enabled)
-	•	Public IP
-	•	Linux VM
+	4.	Verified creation of:
+		•	Resource group
+		•	Virtual network & subnet
+		•	Network security group (SSH enabled)
+		•	Public IP
+		•	Linux VM
 	5.	Tested SSH access to the VM
 	6.	Executed cleanup script to delete all resources
 

@@ -4,7 +4,7 @@ This repository contains a series of foundational Cloud and DevOps projects desi
 
 Each project is documented with clear explanations, scripts and diagrams to demonstrate learning progression and real world readiness.
 
----
+
 ## Projects
 
 ### Project 1: Cloud Foundations
@@ -16,7 +16,7 @@ Each project is documented with clear explanations, scripts and diagrams to demo
 
 📁 Folder: `project-1-cloud-foundations/`
 
----
+
 
 ### Project 2: Resource Group and Deployment Simulations
 **Focus:**
@@ -27,7 +27,7 @@ Each project is documented with clear explanations, scripts and diagrams to demo
 
 📁 Folder: `project-2-resource-group-deployment/`
 
----
+
 
 ### Project 3: Azure Networking & Storage
 **Focus:**
@@ -39,7 +39,6 @@ Each project is documented with clear explanations, scripts and diagrams to demo
 
 📁 Folder: `project-3-azure-networking-storage/`
 
----
 
 ### Project 4: Cloud Security & GitHub Basics
 **Focus:**
@@ -50,6 +49,51 @@ Each project is documented with clear explanations, scripts and diagrams to demo
 - GitHub documentation and version control practices
 
 📁 Folder: `project-4-cloud-security-github/`
+
+
+
+### Project 5: Linux & Git Fundamentals
+**Focus:**
+- Linux file system navigation
+- Permissions and ownership
+- Basic shell commands
+- Git fundamentals (init, add, commit, branch)
+
+📁 Folder: `project-5-linux-git-fundamentals/`
+
+
+
+### Project 6: Azure Linux VM Deployment
+**Focus:**
+- Azure CLI usage
+- Linux VM deployment
+- Resource Groups
+- Networking basics
+- Secure access (SSH)
+
+📁 Folder: `project-6-azure-linux-vm-deployment/`
+
+
+### Project 7: GitHub Collaboration & CI Workflow
+**Focus:**
+- Feature branch workflow
+- Pull requests
+- GitHub Actions CI
+- Repository collaboration practices
+
+📁 Folder: `project-7-github-collaboration-actions/`
+
+
+
+### Project 8: IAM Comparison (AWS vs Azure)
+**Focus:**
+- Identity & Access Management concepts
+- AWS IAM vs Azure Entra ID
+- Roles, policies, groups, and scopes
+- Real-world access control scenarios
+
+📁 Folder: `project-8-iam-comparison/`
+
 
 ## Notes
 

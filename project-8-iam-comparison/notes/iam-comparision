@@ -1,0 +1,75 @@
+# IAM Comparison: AWS vs Azure
+
+## 1) Core identity object
+- AWS: IAM User (long-term identity in AWS account)
+- Azure: User in Entra ID (Azure AD)
+
+Practical scenario:
+A new hire joins a company.
+- AWS: create IAM user (or use federation/SSO) and attach permissions
+- Azure: create Entra user and assign roles/groups
+
+## 2) Groups
+- AWS: IAM Groups (collection of users; permissions via policies)
+- Azure: Entra ID Groups (used for app access + RBAC assignments)
+
+Scenario:
+“Warehouse supervisors” group should access inventory dashboards.
+- AWS: group policy grants read access to dashboards/resources
+- Azure: group assigned RBAC role on resource scope
+
+## 3) Roles (important difference!)
+- AWS: IAM Role = assumed identity (temporary credentials) via STS
+- Azure: RBAC Role = set of permissions; the *identity* is user/service principal/managed identity
+
+Scenario:
+A CI/CD pipeline deploys to cloud.
+- AWS: pipeline assumes a role (temporary tokens) to deploy
+- Azure: pipeline uses a service principal or managed identity; granted RBAC role on subscription/resource group
+
+## 4) Policies / Permissions definition
+- AWS: IAM Policy JSON (Allow/Deny, Actions, Resources, Conditions)
+- Azure: Role Definition (built-in/custom roles), permissions like Actions/NotActions
+
+Key idea:
+- AWS IAM is “policy-first”
+- Azure RBAC is “role assignment-first”
+
+## 5) Permission attachment / assignment
+- AWS: attach policy to user/group/role
+- Azure: assign RBAC role to principal at a scope
+
+## 6) Scope model
+- AWS: policies reference ARNs; scope is by resource and conditions
+- Azure: scope is explicit hierarchy:
+  Management Group → Subscription → Resource Group → Resource
+
+Scenario:
+Give Dev team access only to “dev” environment.
+- AWS: restrict to specific ARNs (dev resources)
+- Azure: assign role only at dev resource group scope
+
+## 7) Service-to-service identity
+- AWS: IAM Role for service + Instance Profile / task role (EC2/ECS/EKS)
+- Azure: Managed Identity (system/user assigned)
+
+Scenario:
+VM needs to read secrets securely.
+- AWS: EC2 role + policy to Secrets Manager/SSM
+- Azure: Managed identity + role assignment to Key Vault
+
+## 8) Temporary credentials
+- AWS: STS assumed roles are default for modern workloads
+- Azure: access tokens via Entra ID; managed identities rotate automatically
+
+## 9) Auditing / logs
+- AWS: CloudTrail (who did what), IAM Access Analyzer
+- Azure: Activity Log, Entra sign-in logs, PIM auditing
+
+## Quick mapping table
+AWS IAM User = Entra ID User  
+AWS IAM Group = Entra ID Group  
+AWS IAM Role = (Azure identity) Service Principal / Managed Identity (then RBAC role assigned)  
+AWS IAM Policy = Azure RBAC Role Definition  
+Policy attachment = Role Assignment  
+ARN resource scope = Azure Scope hierarchy
