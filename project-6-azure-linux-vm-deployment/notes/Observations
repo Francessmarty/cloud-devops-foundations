@@ -1,0 +1,7 @@
+Observations & Notes
+	•	Azure CLI provides more control and transparency than the portal for automation.
+	•	Resource group deletion ensures all dependent resources are removed in one action.
+	•	SSH key permissions must be handled carefully to avoid access issues.
+	•	Running cleanup scripts is critical to avoid unnecessary cloud charges.
+	•	CLI output serves as valid verification evidence in professional environments.
+

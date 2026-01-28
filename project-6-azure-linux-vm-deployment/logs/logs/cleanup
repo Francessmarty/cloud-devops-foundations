@@ -1,0 +1,6 @@
+[INFO] Cleanup script executed
+[INFO] Deleting resource group: rg-ops-foundation-neu
+[INFO] Deletion initiated
+[INFO] Verification started
+[INFO] Resource group no longer present
+[INFO] Cleanup completed successfully

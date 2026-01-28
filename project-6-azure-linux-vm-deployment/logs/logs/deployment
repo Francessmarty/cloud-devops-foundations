@@ -1,0 +1,10 @@
+[INFO] Azure CLI authentication successful
+[INFO] Subscription set: Azure subscription 1
+[INFO] Resource group rg-ops-foundation-neu created
+[INFO] Virtual network and subnet created
+[INFO] Network security group configured (SSH allowed)
+[INFO] Public IP created
+[INFO] Linux VM deployment initiated
+[INFO] VM successfully provisioned
+[INFO] SSH access attempted and verified
+[INFO] Deployment completed successfully
