@@ -1,8 +1,4 @@
 # Notes
-# Project 5: Linux & Git Fundamentals (Notes)
-
-## Objective
-To understand and practice basic Linux commands and Git workflows used in Cloud and DevOps environments.
 
 ## Linux Commands Practiced
 - pwd: show current directory

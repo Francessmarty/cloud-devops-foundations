@@ -100,6 +100,13 @@ This screenshot shows the successful merge of the pull request into the main bra
 
 ---
 
+### Security Summary 
+
+Security best practices were applied across CI, IAM, and VM access, including secret management, SSH hardening, and least-privilege principles.
+
+
+---
+
 ## Key Learnings
 - How Azure resources are organised using Resource Groups
 - Basic virtual networking concepts in Azure

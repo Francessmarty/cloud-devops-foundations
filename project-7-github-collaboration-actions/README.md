@@ -17,4 +17,4 @@ Demonstrate practical GitHub collaboration features:
 - Verified CI ran successfully
 
 ## Outcome
-This project shows how real teams collaborate using GitHub workflows and automated CI pipelines with GitHub Actions.
+This project shows how real teams collaborate using GitHub workflows and automated CI pipelines with GitHub Actions.git

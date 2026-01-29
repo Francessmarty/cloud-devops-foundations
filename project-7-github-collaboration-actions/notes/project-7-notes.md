@@ -6,6 +6,11 @@
 - Using Issues to track work
 - Running CI with GitHub Actions
 
+### GitHub Secrets (CI)
+
+A repository level GitHub Actions secret was added and referenced in the CI workflow to demonstrate secure handling of sensitive values.  
+The workflow confirms the secret is available at runtime without exposing its value.
+
 ## CI Workflow
 - CI is defined in `.github/workflows/ci.yml`
 - Runs on push to main and on pull requests
