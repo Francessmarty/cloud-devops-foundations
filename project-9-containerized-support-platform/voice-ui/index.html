@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voice Support (Local)</title>
+  <style>
+    body { font-family: system-ui, Arial; max-width: 720px; margin: 40px auto; padding: 0 16px; }
+    button { padding: 12px 16px; margin-right: 8px; border-radius: 10px; border: 1px solid #ccc; cursor: pointer; }
+    #status { margin: 16px 0; padding: 10px; background: #f5f5f5; border-radius: 10px; }
+    textarea { width: 100%; height: 120px; margin-top: 12px; }
+    .row { display: flex; gap: 8px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <h1>Containerized Support Platform Voice UI</h1>
+  <p>Press <b>Start</b>, speak, then press <b>Stop</b>. The agent will reply and speak back.</p>
+
+  <div class="row">
+    <button id="startBtn">🎙️ Start</button>
+    <button id="stopBtn" disabled>🛑 Stop</button>
+    <button id="testBtn">🔁 Test API</button>
+  </div>
+
+  <div id="status">Status: idle</div>
+
+  <label>Your speech (text):</label>
+  <textarea id="userText" placeholder="Your speech will appear here..."></textarea>
+
+  <label>Agent reply:</label>
+  <textarea id="agentText" placeholder="Agent reply will appear here..."></textarea>
+
+  <script>
+    const statusEl = document.getElementById("status");
+    const startBtn = document.getElementById("startBtn");
+    const stopBtn  = document.getElementById("stopBtn");
+    const testBtn  = document.getElementById("testBtn");
+    const userText = document.getElementById("userText");
+    const agentText= document.getElementById("agentText");
+
+    const API_URL = "http://localhost:8000/support";
+    const HEALTH_URL = "http://localhost:8000/health";
+
+    function setStatus(msg) { statusEl.textContent = "Status: " + msg; }
+
+    function speak(text) {
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.rate = 1.0;
+      utter.pitch = 1.0;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(utter);
+    }
+
+    async function callApi(text) {
+      setStatus("sending to API...");
+      const res = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text })
+      });
+      if (!res.ok) throw new Error("API error: " + res.status);
+      const data = await res.json();
+      return data.reply || JSON.stringify(data);
+    }
+
+    // Speech recognition (Chrome/Edge)
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      setStatus("SpeechRecognition not supported. Use Chrome/Edge on desktop.");
+      startBtn.disabled = true;
+    }
+
+    let rec;
+    let finalTranscript = "";
+
+    function setupRecognition() {
+      rec = new SpeechRecognition();
+      rec.lang = "en-US";
+      rec.interimResults = true;
+      rec.continuous = true;
+
+      rec.onstart = () => {
+        finalTranscript = "";
+        userText.value = "";
+        agentText.value = "";
+        setStatus("listening...");
+        startBtn.disabled = true;
+        stopBtn.disabled = false;
+      };
+
+      rec.onresult = (event) => {
+        let interim = "";
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          const transcript = event.results[i][0].transcript;
+          if (event.results[i].isFinal) finalTranscript += transcript + " ";
+          else interim += transcript;
+        }
+        userText.value = (finalTranscript + interim).trim();
+      };
+
+      rec.onerror = (e) => setStatus("error: " + e.error);
+
+      rec.onend = async () => {
+        startBtn.disabled = false;
+        stopBtn.disabled = true;
+
+        const text = userText.value.trim();
+        if (!text) {
+          setStatus("stopped (no speech captured)");
+          return;
+        }
+
+        try {
+          const reply = await callApi(text);
+          agentText.value = reply;
+          setStatus("reply received, speaking...");
+          speak(reply);
+          setStatus("idle");
+        } catch (err) {
+          setStatus("API failed: " + err.message);
+        }
+      };
+    }
+
+    setupRecognition();
+
+    startBtn.onclick = () => {
+      try { rec.start(); }
+      catch { setStatus("already listening..."); }
+    };
+
+    stopBtn.onclick = () => {
+      rec.stop();
+      setStatus("stopping...");
+    };
+
+    testBtn.onclick = async () => {
+      try {
+        setStatus("testing API...");
+        const res = await fetch(HEALTH_URL);
+        const data = await res.json();
+        setStatus("API OK: " + JSON.stringify(data));
+      } catch (e) {
+        setStatus("API test failed. Is support-api running on :8000?");
+      }
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+version: "3.8"
+
+services:
+  support-api:
+    build: ./agent-api
+    container_name: support-api
+    ports:
+      - "${API_PORT}:8000"
+    environment:
+      - LLM_PROVIDER=ollama
+      - OLLAMA_URL=http://ollama:${OLLAMA_PORT}
+      - OLLAMA_MODEL=${OLLAMA_MODEL}
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/health').read()\""]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "${OLLAMA_PORT}:${OLLAMA_PORT}"
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list >/dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+
+  voice-ui:
+    image: nginx:alpine
+    container_name: voice-ui
+    ports:
+      - "${UI_PORT}:80"
+    volumes:
+      - ./voice-ui:/usr/share/nginx/html:ro
+      - ./voice-ui/nginx.conf:/etc/nginx/con.d/default.conf:ro
+    depends_on:
+      support-api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    ports:
+      - "${N8N_PORT}:5678"
+    volumes:
+      - n8n_data:/home/node/.n8n
+    restart: unless-stopped
+
+volumes:
+  n8n_data:
+  ollama:

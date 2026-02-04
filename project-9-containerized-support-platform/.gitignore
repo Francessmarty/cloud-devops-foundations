@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env / secrets
+.env
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node / tooling (if any later)
+node_modules/
+
+# Docker misc
+*.pid
+
+#Ollama (LLM models)
+ollama/
+.ollama/
+
+#n8n_data/
