@@ -97,13 +97,14 @@ Each project is documented with clear explanations, scripts and diagrams to demo
 
 ### Project 9: Containerized Voice Support Platform
 
-Focus:
+**Focus:**
+
 Docker Compose orchestration and local AI powered voice applications.
 
 This project implements a fully containerized voice support platform running entirely on a local machine.
 It combines a browser based Voice UI, a FastAPI backend, and a local Ollama LLM runtime to demonstrate real world container communication, health checks, and AI inference without cloud services.
 
-📁 Folder: project-9-containerized-support-platform/
+📁 Folder: 'project-9-containerized-support-platform/'
 
 ## Notes
 
