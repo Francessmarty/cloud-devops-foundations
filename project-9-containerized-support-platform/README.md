@@ -91,6 +91,12 @@ project-9-containerized-support-platform/
 │   └── nginx.conf
 ├── diagram
 │   └── Docker-Architecture.png
+├── screenshots
+│   ├── container-running
+│   ├── health-check
+│   ├── voice-ui
+│   └── dockerhub-push
+│   
 ├── docker-compose.yml
 ├── .env
 ├── .gitignore
@@ -110,6 +116,17 @@ From the project root directory, start all services using Docker Compose:docker 
 During the first run, Ollama will take additional time to download the language model.
 Subsequent runs will start significantly faster because the model is reused from local storage.
 
+
+## Docker Image Push 
+
+The Support API image was successfully built, tagged, and pushed to Docker Hub.
+
+- Docker Hub repo: `francesehinor/support-api`
+- Tag: `docker-project`
+
+### Evidence
+
+![Docker Hub Push](screenshots/04-project-9-dockerhub-push.png)
 
 ### Accessing the Application
 
