@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: support-api
+  namespace: support
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: support-api
+  template:
+    metadata:
+      labels:
+        app: support-api
+    spec:
+      containers:
+        - name: support-api
+          image: francesehinor/support-api:docker-project
+          ports:
+            - containerPort: 8000

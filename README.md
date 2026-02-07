@@ -104,7 +104,25 @@ Docker Compose orchestration and local AI powered voice applications.
 This project implements a fully containerized voice support platform running entirely on a local machine.
 It combines a browser based Voice UI, a FastAPI backend, and a local Ollama LLM runtime to demonstrate real world container communication, health checks, and AI inference without cloud services.
 
-📁 Folder: 'project-9-containerized-support-platform/'
+📁 Folder: project-9-containerized-support-platform/
+ 
+
+### Project 10: Kubernetes Deployment Lab
+
+Focus:
+	•	Kubernetes architecture and control plane fundamentals
+	•	Pods, Deployments, ReplicaSets, and Services
+	•	Namespace isolation and resource organization
+	•	Application deployment and scaling
+	•	Basic Kubernetes security using NetworkPolicies
+
+This project demonstrates hands on Kubernetes fundamentals by deploying and managing a containerized application on a local Kubernetes cluster (Docker Desktop).
+
+It focuses on understanding Kubernetes resource relationships, reconciliation behavior, self-healing workloads, and service abstraction rather than application complexity. The project includes Bash-based automation scripts, Kubernetes YAML manifests, execution screenshots, and an architecture diagram to reflect real-world operational workflows.
+
+📁 Folder: project-10-kubernetes-deployment-lab/
+
+
 
 ## Notes
 
