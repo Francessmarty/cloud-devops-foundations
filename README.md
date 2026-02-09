@@ -120,7 +120,20 @@ This project demonstrates hands on Kubernetes fundamentals by deploying and mana
 
 It focuses on understanding Kubernetes resource relationships, reconciliation behavior, self-healing workloads, and service abstraction rather than application complexity. The project includes Bash-based automation scripts, Kubernetes YAML manifests, execution screenshots, and an architecture diagram to reflect real-world operational workflows.
 
-📁 Folder: project-10-kubernetes-deployment-lab/
+📁 Folder: `project-10-kubernetes-deployment-lab/`
+
+
+
+### Project 11: Kubernetes Advanced Networking (Cloudflare + Ingress)
+
+Focus:
+- Cloudflare DNS and SSL/TLS configuration for an internet-facing application
+- Installing and operating NGINX Ingress Controller using Helm
+- Routing traffic through Ingress → Service → Pods
+- Kubernetes namespace organization and resource isolation
+- Infrastructure documentation using scripts, diagrams, and execution screenshots
+
+📁 Folder: `project-11-kubernetes-advanced-networking/`
 
 
 
