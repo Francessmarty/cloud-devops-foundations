@@ -2,26 +2,31 @@
 
 ## About
 
-This repository documents my hands on learning journey in Cloud Infrastructure and DevOps fundamentals.
+This repository documents my hands-on learning journey in Cloud Infrastructure and DevOps fundamentals.
 
-I am building practical experience with Azure infrastructure, Linux systems, containerization and Kubernetes while developing real world troubleshooting and operations skills.
+I am building practical experience with Azure infrastructure, Linux systems, containerization and Kubernetes while developing real-world troubleshooting and operations skills.
 
-The goal of this repository is to demonstrate technical growth and readiness for IT Support, Cloud Support, and Junior DevOps roles. The repository contains a series of foundational Cloud and DevOps projects designed to build practical understanding of cloud concepts, automation and infrastructure operations.
-
-Each project is documented with clear explanations, scripts and diagrams to demonstrate learning progression and real world readiness.
+The projects in this repository demonstrate core cloud and DevOps concepts including infrastructure deployment, networking, identity management, containerization and Kubernetes operations.
 
 
 
 ## Skills Demonstrated
 
-•  Cloud infrastructure fundamentals (Azure)
-•  Linux system administration
-•  Networking and storage configuration
-•  Infrastructure deployment using CLI
-•  Identity and Access Management concepts
-•  Containerization with Docker
-•  Kubernetes deployment and networking
-•  Git workflows and collaboration
+	•  Cloud infrastructure fundamentals (Azure)
+
+	•  Linux system administration
+
+	•  Networking and storage configuration
+
+	•  Infrastructure deployment using CLI
+
+	•  Identity and Access Management concepts
+
+	•  Containerization with Docker
+
+	•  Kubernetes deployment and networking
+
+	•  Git workflows and collaboration
 
 
 
