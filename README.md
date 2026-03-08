@@ -14,14 +14,14 @@ Each project is documented with clear explanations, scripts and diagrams to demo
 
 ## Skills Demonstrated
 
-• Cloud infrastructure fundamentals (Azure)
-• Linux system administration
-• Networking and storage configuration
-• Infrastructure deployment using CLI
-• Identity and Access Management concepts
-• Containerization with Docker
-• Kubernetes deployment and networking
-• Git workflows and collaboration
+•  Cloud infrastructure fundamentals (Azure)
+•  Linux system administration
+•  Networking and storage configuration
+•  Infrastructure deployment using CLI
+•  Identity and Access Management concepts
+•  Containerization with Docker
+•  Kubernetes deployment and networking
+•  Git workflows and collaboration
 
 
 
