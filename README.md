@@ -123,7 +123,7 @@ The projects in this repository demonstrate core cloud and DevOps concepts inclu
 
 ### Project 09: Containerized Voice Support Platform
 
-**Focus:**
+## Focus:
 
 Docker Compose orchestration and local AI powered voice applications.
 
@@ -161,18 +161,6 @@ Focus:
 
 📁 Folder: `project-11-kubernetes-advanced-networking/`
 
----- 
-
-## Skills Demonstrated
-
-• Cloud infrastructure fundamentals (Azure)
-• Linux system administration
-• Networking and storage configuration
-• Infrastructure deployment using CLI
-• Identity and Access Management concepts
-• Containerization with Docker
-• Kubernetes deployment and networking
-• Git workflows and collaboration
 
 ## Notes
 
@@ -180,4 +168,4 @@ Some projects use deployment simulations and screenshots where live cloud access
 
 All scripts reflect real-world cloud CLI syntax, security best practices and professional documentation standards.
 
-Last documentation update: Feb 2026
+Last documentation update: Mar 2026
